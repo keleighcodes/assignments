@@ -36,12 +36,13 @@ var messages = document.getElementsByClassName("message")
 
 let clearButton = document.getElementById("clear-button")
 
-   clearButton.addEventListener("click", clearMessages)
+   clearButton.addEventListener("click", function(){
+       console.log(messages)
+       for (var i = 0; i < messages.length; i++)
+       messages[i].textContent = ""
+   })
 
-    function clearMessages(){
-        let messages = document.querySelector("messages")
-        messages.innerHTML = "  "
-    }
+    
 
 /* silver */
 
@@ -56,7 +57,7 @@ dropDown.addEventListener("change", function(){
         right[i].style.backgroundColor = "red"
     }
     for (var i = 0; i < left.length; i++){
-        left[i].style.backgroundColor = "black"
+        left[i].style.backgroundColor = "yellow"
     }
     
 })
@@ -64,5 +65,15 @@ dropDown.addEventListener("change", function(){
 /* gold */
 
 
+var newText = document.getElementById("input")
+var sendBttn = document.getElementById("send")
+
+
+sendBttn.addEventListener("click", function(){
+    var newMsg = document.createElement("div")
+    newMsg.textContent = newText.value
+    messages.append(addMessage)
+}
+)
 
 
