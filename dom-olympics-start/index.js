@@ -62,7 +62,7 @@ dropDown.addEventListener("change", function(){
     
 })
 
-/* gold */
+// gold 
 
 
 var newText = document.getElementById("input")
@@ -70,10 +70,13 @@ var sendBttn = document.getElementById("send")
 
 
 sendBttn.addEventListener("click", function(){
+   console.log("hello")
     var newMsg = document.createElement("div")
     newMsg.textContent = newText.value
-    messages.append(addMessage)
+    messages.append(newText)
 }
 )
+
+
 
 
