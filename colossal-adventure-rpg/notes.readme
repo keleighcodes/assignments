@@ -1,0 +1,15 @@
+let hp =100 
+
+while hp >= 0, run walk 
+
+while walking, user is randomly attacked by one of 3 enemies 
+
+user can fight or ignore 
+
+if user fights, run fight function 
+
+fight function - user is prompted to use 1 of 3 weapons 
+    user either wins fight and moves on, or loses fight and loses a random amount of HP between 1 and 25
+
+if user ignores, user loses random amount of health between 0-100
+

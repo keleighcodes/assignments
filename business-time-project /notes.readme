@@ -1,0 +1,9 @@
+- X Inline/Block elements
+- X Divs & spans
+- Images
+- X List (navigation bar can count as a "list")
+- X Headers/paragraphs
+- X Semantic HTML ([HTML 5 new tags](http://www.w3schools.com/html/html5_new_elements.asp))
+- X CSS Box model (margin, padding, border, width/height)
+- Responsive (Media queries, Flexbox, CSS Grid, or any combination of the above)
+- Multiple HTML pages, linked
