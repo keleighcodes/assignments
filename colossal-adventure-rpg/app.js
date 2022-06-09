@@ -79,8 +79,8 @@ function fight(enemy, enemyHp){
             console.log("\nNice try, but we can't outrun our problems that easily.")
             hp = hp - damageToUser
             console.log("While trying to run, " + enemy + " attacked you.")
-            console.log(playerStats)
             fight(enemy, enemyHp)
+            console.log(playerStats)
 
         }
     }

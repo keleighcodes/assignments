@@ -108,7 +108,8 @@ body{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    border: 3px solid darksalmon
+    border: 3px solid darksalmon;
+    list-style-type: none;
 }
 
 .details h7 {

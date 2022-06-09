@@ -1,0 +1,30 @@
+#add{
+     background-color: aquamarine;
+     display: inline-block;
+     margin: auto;
+     padding: 3px
+}
+
+#subtract{
+    background-color: darksalmon;
+    display: inline-block;
+    margin: auto;
+    padding: 3px
+
+}
+
+#multiply{
+background-color: lavender;
+display: inline-block;
+margin: auto;
+padding: 3px
+}
+
+#header{
+    border: 4px groove ;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    
+}

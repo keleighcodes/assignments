@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "styles.css">
+        
+    </head>
+    <body>
+        <div class = "heading">
+            <h1 class = "title">Party All Night Airlines</h1>
+            <h2 class = "subtitle">Passenger Information</h2>
+        </div>
+
+        <div class = "main">
+            <form name = "myForm">
+
+                First Name: <input name = "firstName" placeholder = "First Name"/>
+                <br>
+                Last Name: <input name = "lastName" placeholder = "Last Name"/>
+                <br>
+                Age: <input name = "age" type = "number"/>
+                <br>
+                Gender:
+                Female: <input type = "radio" name = "gender" value = "female"/>
+                Male: <input type = "radio" name = "gender" value = "male"/>
+                Non-binary: <input type = "radio" name = "gender" value = "non-binary"/>
+                <br>
+                Destination:
+                <select name = "destination">
+                    <option value = "Ibiza">Ibiza</option>
+                    <option value = "Las Vegas">Las Vegas</option>
+                    <option value = "Cancun">Cancun</option>
+                </select>
+                <br>
+
+                Dietary Restrictions (select all that apply):
+                <br>
+                Halal<input type = "checkbox" value = "halal" name = "diet"/>
+                Vegan<input type = "checkbox" value = "vegan" name = "diet"/>
+                Low-Carb<input type = "checkbox" value = "low-carb" name = "diet"/>
+
+                <button>Submit</button>
+            </form>
+
+        </div>
+        <script src = "app.js"></script>    
+    </body>
+   
+</html>
