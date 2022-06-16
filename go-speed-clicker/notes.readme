@@ -1,0 +1,24 @@
+# Web Storage
+
+#treat like mini database 
+
+# Local Storage 
+    - Persists on page refresh and closing of the browser
+
+# Session Storage
+    - Does not persist on refresh or closing of the browser
+    
+## Both Session and Local storage are saved as JSON in the browser
+
+## setter method 
+    - save data in local storage (key = value pairs)
+    localStorage.setItem(key, "value")
+    localStorage.key = "value" 
+
+  -JSON = js object notation, turns objects into giant strings. needed for more complex objects
+
+## getter methods 
+
+localStorage.getItem("peeps")
+opposite of stringify - turns JSON into JS 
+use JSON.parse(localStarge.getItem("friends")
