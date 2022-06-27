@@ -17,10 +17,8 @@ function fiveAndGreaterOnly(arr) {
   //3. NEEDS REVIEW 
 
   function fiveCharactersOrFewerOnly(arr) {
-    let splits = arr.map(n => n.split(""));
-    if (splits.length < 5){
-        
-    }
+    let strings = arr.filter(n => n.length < 5);
+    return strings
   }
   // test
   //console.log(fiveCharactersOrFewerOnly(["dog", "wolf", "by", "family", "eaten", "camping"])); // ["by", "dog", "wolf", "eaten"]
