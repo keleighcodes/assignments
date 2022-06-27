@@ -40,7 +40,7 @@ subtraction.addEventListener("submit",function(event){
 multiplication.addEventListener("submit",function(event){
     event.preventDefault();
     const mult1 = Number(multiplication.mult1.value);
-    const mult2 = Number(multiplication.mult1.value);
+    const mult2 = Number(multiplication.mult2.value);
 
     console.log(mult1 * mult2)
 
