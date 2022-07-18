@@ -8,16 +8,16 @@ function total(arr) {
  
  //console.log(total([1,2,3])); // 6
 
- //2. NEED HELP 
+ //2. 
 
  function stringConcat(arr) {
     let newString = arr.reduce(function(final, current){
-         arr.toString();
-         return newString; 
+         return final + current + ""; 
     }, "")
+    return newString
    }
  
- //console.log(stringConcat([1,2,3])); // "123"
+ console.log(stringConcat([1,2,3])); // "123"
 
  //3. 
 
@@ -107,15 +107,21 @@ var voters = [
 
 function voterResults(arr) {
    let voterData = arr.reduce(function(final, voter){
-      if (voter.age <= 25 && voter.voted){
+      if (voter.age <= 25 ){
          final.youngVoters++;
-         final.youngVotes++;
-      } else if (voter.age >= 26 && voter.age <= 35 && voter.voted){
+         if(voter.voted){ 
+            final.youngVotes++
+         };
+      } else if (voter.age >= 26 && voter.age <= 35){
          final.midVoters++;
+         if(voter.voted){
          final.midVotes++;
+      }
       } else {
          final.oldVoters++;
-         final.oldVotes++;
+         if (voter.voted){
+            final.oldVotes++;
+         }
       }
       return final
    }, {youngVoters: 0, midVoters: 0, oldVoters: 0, youngVotes: 0, midVotes: 0, oldVotes: 0})
