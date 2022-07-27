@@ -1,0 +1,131 @@
+{
+    "menu": [
+    {"appetizers": [{
+            "name": "mozzarella sticks",
+            "ingredients": [
+                "mozzarella cheese",
+                "bread crumbs",
+                "marinara sauce"
+            ],
+            "description": "Warm toasty cheese sticks."
+        },
+        {
+            "name": "caesar salad",
+            "ingredients": [
+                "romaine lettuce",
+                "anchovies",
+                "caesar dressing"
+            ],
+            "description": "Traditional caesar salad."
+        },
+        {
+            "name": "tortilla soup",
+            "ingredients": [
+                "chicken",
+                "cheese",
+                "black beans"
+            ],
+            "description": "Warm cheesy soup with a kick."
+        }
+    ]
+    },
+
+    {"cold sandwiches":[
+        {
+            "name":"italian",
+            "ingredients":[
+                "pepperoni",
+                "salami",
+                "capicola"
+        ]
+        },
+        {
+            "name": "southwest turkey",
+            "ingredients":[
+                "turkey",
+                "avocado",
+                "bacon"
+            ]
+        },
+        {
+            "name": "PB&J",
+            "ingredients":[
+                "wheat bread",
+                "peanut butter",
+                "jelly"
+            ]
+        },
+        {"description": "a collection of signature cold subs that you will love."}
+        
+    ]
+    },
+
+    {"hot sandwiches":[
+        {
+            "name": "philly cheesesteak",
+            "ingredients": [
+                "shaved sirlion",
+                "melty cheese",
+                "peppers"
+            ]
+            
+        },
+        {
+            "name": "meatball sub",
+            "ingredients":[
+                "meatballs",
+                "mozzarella cheese",
+                "marinara sauce"
+            ]
+        },
+        {
+            "name": "grilled cheese",
+            "ingredients":[
+                "butter",
+                "colby cheese",
+                "american cheese"
+            ]
+        },
+        {"description": "a collection of signature hot sandwiches."}
+
+    ]
+
+    },
+    {"desserts":[
+        {
+            "name": "cookie platter",
+            "ingredients":[
+                "chocolate chip cookies",
+                "oatmeal raisin cookies",
+                "macadamia nut cookies",
+                "lemon cookies"
+            ]
+        },
+        {
+            "name": "oreo cheesecake",
+            "ingredients":[
+                "oreos",
+                "cream cheese",
+                "whipped cream"
+            ]
+        },
+        {"description": "we hope you saved room for dessert"}
+    ]
+    },
+
+    {"drinks": [
+        {"name": "IPA"},
+        {"name": "sparkling water"},
+        {
+            "name": "sodas",
+            "brands":[
+                "coke",
+                "sprite",
+                "dr. pepper",
+                "baja blast"
+            ]
+        }
+    ]
+    }
+    ]
+}

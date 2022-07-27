@@ -8,12 +8,14 @@ class Player {
         this.hasStar = hasStar;
     }
 
-    setName(namePicked){
-        if(namePicked === "Mario"){
+    setName(){
+        let playerName = Math.floor(Math.random() * 2)
+        if(playerName === 1){
             this.name = "Mario"
-        } else if (namePicked === "Luigi"){
+        } else if (playerName === 2){
             this.name = "Luigi"
         }
+        return this.name
     }
 
     gotHit(){
@@ -34,37 +36,36 @@ class Player {
     gotPowerup(){
         if (this.status === "Powered Up"){
             return this.hasStar === "You have a star!"
-        } else {
-            startGame()
-        }
+        } 
     }
 
     addCoin(){
-        return this.totalCoins++;
+        this.totalCoins ++;
+        return this.totalCoins;
     }
 
     print(){
-        console.log(`Name: ${this.name} /n Total Coins: ${this.totalCoins} /n Status: ${this.status} /n ${this.hasStar}`)
+       return `Name: ${this.name} Total Coins: ${this.totalCoins} Status: ${this.status} ${this.hasStar}`
     }
 
 }
+
 
 function startGame() {
-    const player = new Player("Mario", "small", 0, false)
+    let player = new Player();
+    player.totalCoins = 0;
     let value = Math.floor(Math.random() * 3)
     if (value === 0){
-        Player.gotHit()
+        player.gotHit()
     } else if (value === 1){
-        Player.gotPowerup()
+        player.gotPowerup()
     } else if (value === 2){
-        Player.addCoin()
+        player.addCoin()
     }
-    return player
+    return player.print(this.player)
+    
 }
 
-//console.log(startGame())
-
-const player = new Player("Mario", "small", 0, false)
-console.log(player.gotPowerup())
+console.log(startGame())
 
 
