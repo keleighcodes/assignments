@@ -42,3 +42,14 @@ header{
     width:60px;
     height: 60px;
 }
+
+.footer{
+    font-family: Avenir;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.footer > span{
+    background-color: black;
+    color: white;
+}
