@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+.header{
+    font-family: "Mochiy Pop One";
+    color: darksalmon;
+    text-align: center;
+    text-decoration:dotted;
+}
+
+body{
+    background-image: url("https://img.freepik.com/premium-vector/watercolor-eucalyptus-leaves-frame_158232-177.jpg?w=2000");
+    background-repeat: no-repeat;
+}
+
+
+
+#list{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.main{
+    width: 50%;
+    margin: auto;
+
+}
+
+.form{
+    text-align: center;
+}
+
+
+.form > input {
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: lightgray;
+    color: darkgreen;
+    border: 3px solid darksalmon;
+    border-radius: 3px;
+    
+}

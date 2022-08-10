@@ -2,6 +2,10 @@ const add = document.add
 const subtract = document.subtract 
 const multiply = document.multiply
 
+const newP = document.createElement("p")
+const newP2 = document.createElement("p")
+const newP3 = document.createElement("p")
+
 
 
 addition.addEventListener("submit",function(event){
@@ -13,9 +17,10 @@ addition.addEventListener("submit",function(event){
 
     console.log(add1 + add2)
 
-    const newh1 = document.createElement("h1")
-    newh1.textContent = (add1 + add2)
-    document.getElementById("add").append(newh1)
+   
+    newP.textContent = (add1 + add2)
+    document.getElementById("add").append(newP)
+    newP.style.textAlign = "center"
 
 }
 )
@@ -29,9 +34,10 @@ subtraction.addEventListener("submit",function(event){
 
     console.log(sub1 - sub2);
 
-    const newh2 = document.createElement("h2");
-    newh2.textContent = (sub1 - sub2);
-    document.getElementById("subtract").append(newh2)
+ 
+    newP2.textContent = (sub1 - sub2);
+    document.getElementById("subtract").append(newP2)
+    newP2.style.textAlign = "center"
 
 
 }
@@ -41,12 +47,20 @@ multiplication.addEventListener("submit",function(event){
     event.preventDefault();
     const mult1 = Number(multiplication.mult1.value);
     const mult2 = Number(multiplication.mult2.value);
+    multiplication.mult1.value = " "
+    multiplication.mult2.value = " "
 
     console.log(mult1 * mult2)
-
-    const newh3 = document.createElement("h3");
-    newh3.textContent = (mult1 * mult2);
-    document.getElementById("multiply").append(newh3);
+    newP3.textContent = (mult1 * mult2);
+    newP3.style.textAlign = "center"
+    document.getElementById("multiply").append(newP3);
 
 }
 )
+
+const clearBttn = document.getElementById("button")
+clearBttn.addEventListener("click", function(){
+    newP.remove()
+    newP2.remove()
+    newP3.remove()
+})
