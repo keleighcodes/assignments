@@ -22,16 +22,16 @@ body{
     font-family: 'Julius Sans One', sans-serif;
     font-style: normal;
     text-transform: uppercase;
+    opacity: 60%
 }
 
 
 .intro {
-    background-image: url(http://csszengarden.com/214/contours.png), url(http://csszengarden.com/214/huntington.jpg); 
+    background-image: url("http://csszengarden.com/214/contours.png"), url("http://csszengarden.com/214/huntington.jpg"); 
     background-repeat: no-repeat;
     background-position: relative;
     background-color:#8abc9f;
     text-align:center;
-   
 }
 
 .intro > header > h1 {
@@ -47,11 +47,15 @@ body{
 .intro > header > h2{
     font-style: italic;
     color: #fff;
+    opacity: 80%;
 }
 
 .view-designs{
     font-family: 'Julius Sans One', sans-serif;
     color: #fff;   
+    text-align: center;
+    margin: 25%;
+    background-image: url("http://csszengarden.com/214/contours.png")
 }
 
 .background-about{

@@ -11,7 +11,7 @@ function timerClick(){
 
     setTimeout(function(){
         const newP = document.createElement("p")
-        newP.textContent = clicks + " clicks!"
+        newP.textContent = clicks + " clicks! Try Again?"
         document.body.append(newP)
         localStorage.setItem("counter", clicks);
         console.log(clicks)
@@ -21,7 +21,7 @@ function timerClick(){
 
  function buttonClick(){
         clicks++
-        console.log(clicks)
+        //console.log(clicks)
     }
 
 
