@@ -2,3 +2,42 @@ html, body {
     margin: 0;
     padding: 10px;
 }
+
+.navbar {
+    border: groove;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav-items{
+    list-style: none;
+    display: flex;
+    
+}
+
+.nav-items > li{
+    margin: 10px
+}
+
+.nav-logo {
+    width: 60px
+}
+
+.page{
+    font-family: Avenir;
+
+}
+
+.footer{
+    background-color: gray;
+    font-size: larger;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    height: 2.5rem;
+    padding: 3px;
+}

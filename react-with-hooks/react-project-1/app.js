@@ -1,31 +1,48 @@
-/*
-Challenge: Starting from scratch, build and render the 
-HTML for our section project. Check the Google slide for 
-what you're trying to build.
+function Header() {
+    return (
+        <header>
+            <nav className = "navbar">
+                <img src="./react-logo.png" className = "nav-logo" />
+                <ul className = "nav-items"> 
+                  <li>Pricing</li>
+                  <li>About</li>
+                  <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
+    )
+}
 
-We'll be adding styling to it later.
+function Footer() {
+    return (
+        <footer className = "footer">
+            <small>© 2021 Williams Development. All rights reserved.</small>
+        </footer>
+    )
+}
 
-Hints:
-* The React logo is a file in the project tree, so you can
-  access it by using `src="./react-logo.png" in your image
-  element
-* You can also set the `width` attribute of the image element
-  just like in HTML. In the slide, I have it set to 40px
- */
+function MainContent() {
+    return (
+        <div>
+            <h1>Reasons I'm excited to learn React</h1>
+            <ol>
+                <li>It's a popular library, so I'll be 
+                able to fit in with the cool kids!</li>
+                <li>I'm more likely to get a job as a developer
+                if I know React</li>
+            </ol>
+        </div>
+    )
+}
 
+function Page() {
+    return (
+        <div className = "page">
+            <Header />
+            <MainContent />
+            <Footer />
+        </div>
+    )
+}
 
-var body = (
-  <div>
-    <img src = "./react-logo.png" width = "40px"></img>
-    <h1>Fun Facts About React</h1>
-    <ul>
-      <li>Was originally released in 2013</li>
-      <li>Is composable and declarative</li>
-      <li>Has well over 100k stars on Github</li>
-      <li>Is maintained by Facebook</li>
-      <li>Powers thousands of enterprise apps, many of which are mobile</li>
-    </ul>
-  </div>
-)
-
-ReactDOM.render(body, document.getElementById("root"))
+ReactDOM.render(<Page />, document.getElementById("root"))
